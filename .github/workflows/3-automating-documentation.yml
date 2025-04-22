@@ -1,6 +1,6 @@
-name: Step 3, Creating GitHub Releases
+name: Step 3, Automating Changelog Updates
 
-# This step triggers when a comment containing "release-mastered" is created on an issue
+# This step triggers when a comment containing "automation-understood" is created on an issue
 # This workflow updates from step 3 directly to step X (finish)
 
 on:
@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   get_current_step:
@@ -25,18 +26,18 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_release_mastered_comment:
-    name: On release-mastered comment
+  on_automation_understood_comment:
+    name: On automation-understood comment
     needs: get_current_step
 
     # Run only if:
     # 1. This repository isn't a template
     # 2. The step is currently 3
-    # 3. The comment contains "release-mastered"
+    # 3. The comment contains "automation-understood"
     if: >-
       ${{ !github.event.repository.is_template
           && needs.get_current_step.outputs.current_step == 3
-          && contains(github.event.comment.body, 'release-mastered') }}
+          && contains(github.event.comment.body, 'automation-understood') }}
 
     runs-on: ubuntu-latest
 
