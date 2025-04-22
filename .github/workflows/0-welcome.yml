@@ -12,7 +12,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   get_current_step:
@@ -44,10 +43,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Create our base app.js file
+      # Create our base app.js file for the project
       - name: Create app.js file
         run: |
-          echo 'console.log("Hello, Semantic Versioning!");' > app.js
+          echo 'console.log("Hello, Changelog and Release Notes!");' > app.js
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
           git add app.js
