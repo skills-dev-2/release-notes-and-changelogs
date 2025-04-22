@@ -1,4 +1,4 @@
-## Step 2: GitHub Release Notes
+# Step 2: GitHub Release Notes
 
 GitHub Releases are a way to package and provide software to your users. They're built on Git tags but offer more features like release notes and binary attachments.
 
