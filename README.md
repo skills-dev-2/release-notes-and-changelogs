@@ -7,47 +7,62 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Mastering Semantic Versioning and Releases
+# Mastering Release Notes and Changelogs
 
-_Learn how to effectively manage your project's evolution with semantic versioning tags and GitHub releases._
+_Learn how to create professional release notes and maintain effective changelogs for your GitHub projects._
 
 </header>
 
-# Step 1: Understanding Semantic Versioning
+<!--
+  <<< Author notes: Course start >>>
+  Include start button, a note about Actions minutes,
+  and tell the learner why they should take the course.
+-->
 
-Semantic Versioning (SemVer) is a versioning scheme that communicates meaning about the underlying changes in a release. It makes it easy for developers to understand the impact of upgrades.
+## Welcome
 
-## 📝 The SemVer Format
+Clear documentation of changes is crucial for maintaining software projects and communicating updates to users. This course will teach you how to create effective release notes, maintain standardized changelogs, and automate the documentation process.
 
-A semantic version number has three parts: **MAJOR.MINOR.PATCH**
+- **Who is this for**: Developers, project maintainers, and open source contributors.
+- **What you'll learn**: Best practices for release notes, changelog maintenance, and automating documentation.
+- **What you'll build**: A project with professional release notes, standardized changelogs, and automated release documentation.
+- **Prerequisites**: Basic understanding of Git, GitHub workflows, and semantic versioning.
+- **How long**: 30-45 minutes.
 
-Each number communicates specific kinds of changes:
+### In this course, you'll learn how to:
 
-- **MAJOR** version increments when you make incompatible API changes
-- **MINOR** version increments when you add functionality in a backward compatible manner
-- **PATCH** version increments when you make backward compatible bug fixes
+1. Create effective release notes for GitHub releases
+2. Maintain a standardized CHANGELOG.md file
+3. Automate changelog generation with GitHub Actions
 
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+## Introduction to Release Notes and Changelogs
 
-## 📝 SemVer Examples
+Release notes and changelogs are essential tools for communicating changes to your users:
 
-Let's look at some examples:
+- **Release Notes**: A detailed description of changes in a specific version
+- **Changelogs**: A chronological record of all changes across versions
+- **Standardization**: Following industry conventions makes your documentation easier to understand
+- **Automation**: Tools can help maintain consistent documentation with minimal effort
 
-- `1.0.0`: Initial release
-- `1.0.1`: Bug fixes, no new features
-- `1.1.0`: New features added, backward compatible
-- `2.0.0`: Breaking changes that require users to modify their code
-- `1.0.0-alpha`: Pre-release version
-- `1.0.0-beta.1`: Another pre-release version
+When done well, release notes and changelogs help users:
+- Understand what's changed between versions
+- Decide whether to upgrade
+- Find new features they might want to use
+- Identify when bugs they've encountered have been fixed
 
-## :keyboard: Task: Make Your First Change
+This course will teach you how to create and maintain these important documents for your GitHub projects.
 
-1. Navigate to the `app.js` file in your repository
-2. Click the edit (pencil) icon
-3. Edit the File by adding a comment to the bottom of the file: `// Version 0.1.0 - Initial version`
-4. Commit the change directly to a new branch, creating a Pull Request
-5. Create the Pull Request
-6. Comment "semver-understood" on this PR when complete
+---
+
+### 🚀 How to start this course
+
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=bryceshen1&template_name=Release-Notes-and-Changelogs&owner=%40me&name=Release-Notes-and-Changelogs&description=Learning+Release+Notes+and+Changelogs&visibility=public)
+
+1. Right-click **Start course** and open the link in a new tab.
+2. In the new tab, follow the prompts to create a new repository.
+   - For owner, choose your personal account or an organization to host the repository.
+   - We recommend creating a public repository—private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
 <footer>
 
@@ -58,7 +73,7 @@ Let's look at some examples:
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/semantic-versioning) &bull; [GitHub status](https://www.githubstatus.com/)
+Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/release-notes-and-changelogs) &bull; [GitHub status](https://www.githubstatus.com/)
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
