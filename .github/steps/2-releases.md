@@ -43,7 +43,6 @@ Some best practices for managing your releases:
 - **Pre-releases**: Use tags like `v1.0.0-beta.1` for pre-release versions
 - **Build Metadata**: Add build information with `+` (e.g., `v1.0.0+20130313144700`)
 - **Version Control**: Never delete or move tags once published
-- **Automate**: Consider setting up CI/CD workflows to create releases automatically
 
 ### :keyboard: Task: Update Your Changelog
 
