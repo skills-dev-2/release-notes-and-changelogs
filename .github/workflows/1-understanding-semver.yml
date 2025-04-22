@@ -1,0 +1,56 @@
+name: Step 1, Understanding Semantic Versioning
+
+# This step triggers when a comment containing "semver-understood" is created on an issue
+# This workflow updates from step 1 to step 2
+
+on:
+  workflow_dispatch:
+  issue_comment:
+    types:
+      - created
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  get_current_step:
+    name: Check current step number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - id: get_step
+        run: |
+          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
+
+  on_semver_understood_comment:
+    name: On semver-understood comment
+    needs: get_current_step
+
+    # Run only if:
+    # 1. This repository isn't a template
+    # 2. The step is currently 1
+    # 3. The comment contains "semver-understood"
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 1
+          && contains(github.event.comment.body, 'semver-understood') }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Update to step 2
+      - name: Update to step 2
+        uses: skills/action-update-step@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 1
+          to_step: 2

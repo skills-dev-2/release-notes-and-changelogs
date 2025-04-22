@@ -1,0 +1,55 @@
+name: Step 3, Creating GitHub Releases
+
+# This step triggers when a comment containing "release-mastered" is created on an issue
+# This workflow updates from step 3 directly to step X (finish)
+
+on:
+  workflow_dispatch:
+  issue_comment:
+    types:
+      - created
+
+permissions:
+  contents: write
+
+jobs:
+  get_current_step:
+    name: Check current step number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - id: get_step
+        run: |
+          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
+
+  on_release_mastered_comment:
+    name: On release-mastered comment
+    needs: get_current_step
+
+    # Run only if:
+    # 1. This repository isn't a template
+    # 2. The step is currently 3
+    # 3. The comment contains "release-mastered"
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 3
+          && contains(github.event.comment.body, 'release-mastered') }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Update to step X (finish) directly from step 3
+      - name: Update to step X
+        uses: skills/action-update-step@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 3
+          to_step: X

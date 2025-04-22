@@ -1,0 +1,56 @@
+
+name: Step 2, Creating Git Tags
+
+# This step triggers when a comment containing "tags-created" is created on an issue
+# This workflow updates from step 2 to step 3
+
+on:
+  workflow_dispatch:
+  issue_comment:
+    types:
+      - created
+
+permissions:
+  contents: write
+
+jobs:
+  get_current_step:
+    name: Check current step number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - id: get_step
+        run: |
+          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
+
+  on_tags_created_comment:
+    name: On tags-created comment
+    needs: get_current_step
+
+    # Run only if:
+    # 1. This repository isn't a template
+    # 2. The step is currently 2
+    # 3. The comment contains "tags-created"
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 2
+          && contains(github.event.comment.body, 'tags-created') }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Update to step 3
+      - name: Update to step 3
+        uses: skills/action-update-step@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 2
+          to_step: 3

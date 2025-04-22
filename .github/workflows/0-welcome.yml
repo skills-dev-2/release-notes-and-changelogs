@@ -1,0 +1,63 @@
+name: Step 0, Welcome
+
+# This step triggers after the learner creates a new repository from the template.
+# This workflow updates from step 0 to step 1.
+
+# This will run every time we create push a commit to `main`.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  get_current_step:
+    name: Check current step number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - id: get_step
+        run: |
+          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
+
+  on_start:
+    name: On start
+    needs: get_current_step
+
+    # Only run when this isn't the template repository and we're on step 0
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 0 }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Create our base app.js file
+      - name: Create app.js file
+        run: |
+          echo 'console.log("Hello, Semantic Versioning!");' > app.js
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add app.js
+          git commit --message="Add initial app.js file"
+          git push origin main
+
+      # Update to step 1
+      - name: Update to step 1
+        uses: skills/action-update-step@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 0
+          to_step: 1
