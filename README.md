@@ -56,7 +56,7 @@ This course will teach you how to create and maintain these important documents 
 
 ### 🚀 How to start this course
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=bryceshen1&template_name=Release-Notes-and-Changelogs&owner=%40me&name=Release-Notes-and-Changelogs&description=Learning+Release+Notes+and+Changelogs&visibility=public)
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=bryceshen1&template_name=Release-notes-and-changelogs&owner=%40me&name=Release-notes-and-changelogs&description=Learning+Release+notes+and+changelogs&visibility=public)
 
 1. Right-click **Start course** and open the link in a new tab.
 2. In the new tab, follow the prompts to create a new repository.
