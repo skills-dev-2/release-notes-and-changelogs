@@ -7,7 +7,7 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Mastering Release Notes and Changelogs
+# Attaching GitHub Release notes and changelogs
 
 _Learn how to create professional release notes and maintain effective changelogs for your GitHub projects._
 
