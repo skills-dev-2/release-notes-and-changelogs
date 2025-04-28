@@ -32,7 +32,7 @@ Where `type` can be:
 - `test`: Adding or fixing tests
 - `chore`: Changes to the build process or tools
 
-## :keyboard: Task: Update Yyur changelog and create a new GitHub Release
+## :keyboard: Task: Update your changelog
 
 1. Update your CHANGELOG.md file to include a new version:
 
