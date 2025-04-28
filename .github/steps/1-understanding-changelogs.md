@@ -71,4 +71,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 5. Commit this file to your repository
 6. Go to the issue you created earlier and comment "changelog-created"
 
-Once you've completed these steps, I'll guide you to the next part of the course.
+Once you've completed these steps, refresh your page to advance to the next part of the course.
