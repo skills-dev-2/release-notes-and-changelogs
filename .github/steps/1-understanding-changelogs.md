@@ -1,12 +1,12 @@
-# Step 1: Understanding Changelogs
+# Step 1: Understanding changelogs
 
 Changelogs and release notes are essential tools for communicating changes to users of your software. They help users understand what has changed between versions, which is crucial for making upgrade decisions and finding new features.
 
-## 📝 What is a Changelog?
+## 📝 What is a changelog?
 
 A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project. A well-structured changelog makes it easier for users and contributors to see precisely what changes have been made between each release of the project.
 
-## 📝 The Keep a Changelog Format
+## 📝 Keep a changelog format
 
 Many projects follow the format defined at [keepachangelog.com](https://keepachangelog.com/), which includes these principles:
 
@@ -17,7 +17,7 @@ Many projects follow the format defined at [keepachangelog.com](https://keepacha
 - The latest version comes first
 - The release date of each version is displayed
 
-## 📝 Standard Sections
+## 📝 Standard sections
 
 A standard changelog typically groups changes into these categories:
 
@@ -28,14 +28,14 @@ A standard changelog typically groups changes into these categories:
 - **Fixed** for any bug fixes
 - **Security** for vulnerability fixes
 
-## :keyboard: Task: Get Started
+## :keyboard: Task: Get started
 
 Let's begin by setting up our learning environment:
 
 1. Navigate to the Issues tab in your repository
 2. Create a new issue titled "Starting my changelog journey"
 
-## :keyboard: Task: Create Your First CHANGELOG.md
+## :keyboard: Task: Create your first CHANGELOG.md
 
 After crearting your issue:
 
