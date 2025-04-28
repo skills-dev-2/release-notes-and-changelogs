@@ -23,7 +23,3 @@ By mastering these concepts, you've gained valuable skills that will help you:
 - Explore tools like `standard-version`, `release-please`, or `semantic-release`
 - [Take another GitHub Skills course](https://github.com/skills)
 - [Read more about Keep a Changelog standard](https://keepachangelog.com/)
-
-### Did you know?
-
-Many open-source projects now use automated changelog generation as part of their regular release process. This not only saves time but also ensures consistency in how changes are communicated to users.
