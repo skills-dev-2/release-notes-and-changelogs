@@ -21,7 +21,6 @@ By mastering these concepts, you've gained valuable skills that will help you:
 - Configure GitHub Actions to automatically generate changelogs
 - Implement conventional commits in your workflow
 - Explore tools like `standard-version`, `release-please`, or `semantic-release`
-- Learn more about [GitHub Actions for release management](https://docs.github.com/en/actions/guides/about-continuous-deployment)
 - [Take another GitHub Skills course](https://github.com/skills)
 - [Read more about Keep a Changelog standard](https://keepachangelog.com/)
 
