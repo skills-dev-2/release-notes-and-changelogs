@@ -26,7 +26,7 @@ A well-crafted GitHub release includes:
    - **Breaking Changes** section (mention "none" if applicable)
 9. Click "Publish release"
 
-### 📝 Release Notes best practices
+### 📝 Release notes best practices
 
 Good release notes:
 - Group changes by type (features, fixes, breaking changes)
