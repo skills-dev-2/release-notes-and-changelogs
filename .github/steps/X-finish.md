@@ -13,7 +13,7 @@ By mastering these concepts, you've gained valuable skills that will help you:
 ### What you've learned:
 
 1. **CHANGELOG.md Creation**: How to structure and maintain a standardized changelog
-2. **Effective Release Notes**: How to write user-focused release notes for GitHub releases
+2. **Effective Release Notes**: How to write user-focused release notes for GitHub Releases
 3. **Automation Techniques**: Approaches to automating your changelog management
 
 ### What's next?
