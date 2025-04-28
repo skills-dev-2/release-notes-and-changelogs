@@ -2,7 +2,7 @@
 
 Maintaining changelogs manually can be time-consuming. Fortunately, there are several tools and workflows that can help automate this process. In this step, we'll explore how to use GitHub Actions to automatically update your changelog.
 
-## 📝 Approaches to Automation
+## 📝 Approaches to automation
 
 There are several approaches to automating changelog generation:
 
@@ -10,7 +10,7 @@ There are several approaches to automating changelog generation:
 2. **GitHub Actions**: Automated workflows that can update changelogs based on PRs or commits
 3. **Third-party tools**: Tools like `standard-version`, `release-it`, or `auto-changelog`
 
-## 📝 Conventional Commits Format
+## 📝 Conventional commits format
 
 Conventional Commits use this format:
 
@@ -32,7 +32,7 @@ Where `type` can be:
 - `test`: Adding or fixing tests
 - `chore`: Changes to the build process or tools
 
-## :keyboard: Task: Update Your Changelog and Create a New Release
+## :keyboard: Task: Update Yyur changelog and create a new GitHub Release
 
 1. Update your CHANGELOG.md file to include a new version:
 
@@ -57,7 +57,7 @@ Where `type` can be:
    - Description: Include detailed, user-friendly release notes
 5. Go to the issue you created earlier and comment "automation-understood"
 
-## 📝 Further Automation
+## 📝 Further automation
 
 For full automation, you could set up a GitHub Action workflow that:
 1. Detects conventional commits
