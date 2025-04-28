@@ -31,11 +31,11 @@ Clear documentation of changes is crucial for maintaining software projects and 
 
 ### In this course, you'll learn how to:
 
-1. Create effective release notes for GitHub releases
+1. Create effective release notes
 2. Maintain a standardized CHANGELOG.md file
 3. Automate changelog generation with GitHub Actions
 
-## Introduction to Release Notes and Changelogs
+## Introduction to release notes and changelogs
 
 Release notes and changelogs are essential tools for communicating changes to your users:
 
