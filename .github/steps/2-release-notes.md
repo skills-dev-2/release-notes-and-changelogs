@@ -2,7 +2,7 @@
 
 GitHub Releases are a way to package and provide software to your users. They're built on Git tags but offer more features like release notes and binary attachments.
 
-### 📦 Anatomy of a GITHUB Release
+### 📦 Anatomy of a GitHub Release
 
 A well-crafted GitHub release includes:
 
@@ -26,7 +26,7 @@ A well-crafted GitHub release includes:
    - **Breaking Changes** section (mention "none" if applicable)
 9. Click "Publish release"
 
-### 📝 Release Notes Best Practices
+### 📝 Release Notes best practices
 
 Good release notes:
 - Group changes by type (features, fixes, breaking changes)
@@ -44,7 +44,7 @@ Some best practices for managing your releases:
 - **Build Metadata**: Add build information with `+` (e.g., `v1.0.0+20130313144700`)
 - **Version Control**: Never delete or move tags once published
 
-### :keyboard: Task: Update Your Changelog
+### :keyboard: Task: Update your changelog
 
 1. Update your CHANGELOG.md file to include information about the release you just created
 2. Make sure the date matches your release date
