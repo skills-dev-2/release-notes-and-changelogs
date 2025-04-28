@@ -66,3 +66,5 @@ For full automation, you could set up a GitHub Action workflow that:
 4. Creates GitHub releases
 
 Tools like `release-please`, `semantic-release`, or GitHub's own Release Drafter can help with this automation.
+
+Once you've completed these steps, refresh your page to advance to the next part of the course.
