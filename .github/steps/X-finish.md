@@ -1,6 +1,6 @@
 ## Finish
 
-_Congratulations on completing this course on Release Notes and Changelogs!_
+_Congratulations on completing this course on release notes and changelogs!_
 
 <img src=https://octodex.github.com/images/hubot.jpg alt=celebrate width=300 align=right>
 
