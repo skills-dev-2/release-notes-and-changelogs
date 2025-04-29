@@ -37,7 +37,7 @@ Let's begin by setting up our learning environment:
 
 ## :keyboard: Task: Create your first CHANGELOG.md
 
-After crearting your issue:
+After creating your issue:
 
 1. Create a new file named `CHANGELOG.md` in the root of your repository
 2. Add the following content to your file:
