@@ -37,10 +37,6 @@ This course will teach you how to create and maintain these important documents 
 
 ---
 
-### 🚀 How to start this course
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=bryceshen1&template_name=Release-notes-and-changelogs&owner=%40me&name=Release-notes-and-changelogs&description=Learning+Release+notes+and+changelogs&visibility=public)
-
 ### How to start this exercise
 
 Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.

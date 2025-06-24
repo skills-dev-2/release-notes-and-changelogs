@@ -21,7 +21,7 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.4.0
     with:
-      exercise-title: "Release Notes and Changelogs"
+      exercise-title: "Attaching Github Release Notes and Changelogs"
       intro-message: "You're now ready to learn about release notes and changelogs to best manage your Github Releases."
 
 
